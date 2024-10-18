@@ -3,6 +3,7 @@ This is a data analysis/data science project reviewing Washington state electric
 
 # Executive Summary
 Over the past few years, I have seen an increase in the number of electric vehicles where I live (Seattle, Washington). While driving, my wife and I play a game of counting how many Tesla’s we see/pass as we travel from point A to point B. A fun game that highlights the increase in electric vehicles in our area. This has caused me to wonder about the energy consumption of these vehicles and do Washington state’s power grid/power plants have the capacity. Currently the short answer is yes. 
+
 As of early September 2024, there are 161,197 electric vehicles in the state of Washington. Assuming that each is fully charged twice a month (based average electric range of 261 miles; average battery size of 69 kilowatts per hour) the additional annual energy draw is 428 gWh. For 2023 the estimated household unit annual energy draw is 43,889 gWh (3.361mm household units for 2023; estimated annual energy usage 13,056 kilowatt-hours). The annual power plant capacity (in aggregate) is 257,352 gWh. 
 
 Total power plant annual capacity = 257,352 gWh
@@ -18,27 +19,28 @@ Caveats
 # Business Problem
 Determine how Washington state’s electricity availability is impacted by the increase in electric vehicles.
 1)	Define total number of electric cars in Washington state.
-  a.  By year from 2018 through 2024
-  b.	By county.
+   -  By year from 2018 through 2024
+   -  By county
 2)	Calculate the increase in kilowatt usage of this population for a year.
-a.	  Define kilowatt usage to charge each electric car.
-b.	  Convert kilowatt-hour to gigawatt-hour.
+ - Define kilowatt usage to charge each electric car.
+ - Convert kilowatt-hour to gigawatt-hour.
 3)	Define the total number of household units within the state and the annual kilowatt usage for each (kilowatt-hour will need to be converted to gigawatt-hour). 
-4)	Identify and determine the total number of power plants (biomass, batteries, coal, hydroelectric, natural gas, nuclear, petroleum, solar, wind) and their collective annual capacity. 
-a.	  Convert how energy production in measured: megawatts to gigawatts-hour.
+4)	Identify and determine the total number of power plants (biomass, batteries, coal, hydroelectric, natural gas, nuclear, petroleum, solar, wind) and their collective annual capacity.
+  - Convert how energy production in measured: megawatts to gigawatts-hour.
 5)	Note – this study is only looking at impact of electric vehicles to available electricity based on residential demands. Industrial and commercial needs were not taken into consideration. Additionally, I want to acknowledge that the increased use of Artificial Intelligence and the electricity needed for compute power (in datacenters run by Microsoft, Google, Amazon, and others) will absolutely impact the availability of electricity in Washington state.
 
 # Methodology
 Electric Vehicle Identification
 1)	Pulled current electric car population in Washington State for DATA.GOV - https://catalog.data.gov/dataset/electric-vehicle-population-data. This is a csv file. Cleaned data by:
-  a.	Removed all non- Washington state data. 
-  b.	Updated Electric Range and Base MSRP columns due to missing data. Used MS Copilot and ChatGPT to find data for each car. To keep data consistent, I pulled baseline model information.
-    i.	Electric range for vehicles
-    ii.	Base MSRP
-    iii.	Base Battery size
-    iv.	Fast DC charging supportability (informational purposes)
-c.	Added column that highlights kilowatts used to fully charge battery – manually pulled data (kilowatts per battery) per car brand, model, model year using Microsoft Copilot and/or Chat GPT.
-d.	Aggregated electric vehicle data by county:
+-  Removed all non-Washington state data
+-  Updated Electric Range and Base MSRP columns due to missing data. Used MS Copilot and ChatGPT to find data for each car. To keep data consistent, I pulled base model information
+   -  Electric range for vehicles
+   -  Base MSRP
+   -  Base Battery size
+   -  Fast DC charging supportability (informational purposes)
+-  Added column that highlights kilowatts used to fully charge battery – manually pulled data (kilowatts per battery) per car brand, model, model year using Microsoft Copilot and/or Chat GPT.
+-  Aggregated electric vehicle data by county - counties with largest population of battery electric vehicles:
+  
 ![image](https://github.com/user-attachments/assets/a55fa920-8ade-46f8-bf22-fa9e4370f29a)
 
 Power Plant Identification 
@@ -48,10 +50,10 @@ Household Unit Determination
 1)	Through the U.S. Census Bureau, Population Division created a data set of housing units for all of Washington state and by individual counties for the years 2016 thru 2023. (https://www.census.gov/data/tables/time-series/demo/popest/2020s-total-housing-units.html) 
 2)	Leveraging Chat GPT found information from the Washington State Department of Commerce, Energy Office (via Chat GPT) showed 2023, the average annual residential electricity usage in Washington state was approximately 13,056 kilowatt-hours (kWh)
 
-#Skills Used
-Excel – data set manipulation, data cleaning
-Artificial intelligence – using Microsoft Copilot and Chat GPT to supplement data sets
-Python -exploratory data analysis (Pandas), data set manipulation, data visualization (GeoPandas, MatPlotLib)
+# Skills Used
+-  Excel – data set manipulation, data cleaning
+-  Artificial intelligence – using Microsoft Copilot and Chat GPT to supplement data sets
+-  Python -exploratory data analysis (Pandas), data set manipulation, data visualization (GeoPandas, MatPlotLib)
 
 # Results and Business Recommendations
 As shared above, the current state of power plant capacity to residential plus electric vehicle needs is in very good shape for Washington state. With that said, a few things to consider could impact the surplus of energy.
