@@ -86,7 +86,8 @@ Washington State Energy Profile - https://www.eia.gov/state/print.php?sid=WA
 1)	As of February 2024 – 2,150 EV charging stations with 5,900 ports
  
 Housing Unit Estimates for Washington - https://www.census.gov/data/tables/time-series/demo/popest/2010s-total-housing-units.html and https://www.census.gov/data/tables/time-series/demo/popest/2020s-total-housing-units.html
-Washington State Department of Commerce, Energy Office (via Chat GPT) showed 2023, the average annual residential electricity usage in Washington state was approximately 13,056 kilowatt-hours (kWh). This figure is based on an average monthly consumption of about 1,088 kWh
+
+Washington State Department of Commerce, Energy Office (via Chat GPT) showed for 2023 the average annual residential electricity usage in Washington state was approximately 13,056 kilowatt-hours (kWh). This figure is based on an average monthly consumption of about 1,088 kWh
 
 
    
