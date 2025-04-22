@@ -12,8 +12,8 @@ Household unit annual use = 43,889 gWh
 Surplus of 213,034 gWh
 
 Caveats
-1)	This brief based on publicly available information I found through web search and use of Microsoft Copilot and Chat GPT.
-2)	This brief does not take into account Washington state’s commercial not industrial energy needs/usage. 
+1)	This brief is based on publicly available information I found through web search and use of Microsoft Copilot and Chat GPT.
+2)	This brief does not take into account Washington state’s commercial nor industrial energy needs/usage. 
 3)	Resources used are noted at the end of this brief.
 
 # Business Problem
