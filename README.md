@@ -2,7 +2,7 @@
 This is a data analysis/data science project reviewing Washington state electric vehicles and impact to power grid
 
 # Executive Summary
-Over the past few years, I have seen an increase in the number of electric vehicles where I live (Seattle, Washington). This made me wonder about the energy consumption of these vehicles and do Washington state’s power grid/power plants have the capacity. Currently the short answer is yes. 
+Over the past few years, I have seen an increase in the number of electric vehicles where I live (Seattle, Washington). This made me wonder about the energy consumption of these vehicles and does Washington state’s power grid/power plants have the capacity. Currently the short answer is yes. 
 
 As of early September 2024, there are 161,197 electric vehicles in the state of Washington. Assuming that each is fully charged twice a month (based average electric range of 261 miles; average battery size of 69 kilowatts per hour) the additional annual energy draw is 428 gWh. For 2023 the estimated household unit annual energy draw is 43,889 gWh (3.361mm household units for 2023; estimated annual energy usage 13,056 kilowatt-hours). The annual power plant capacity (in aggregate) is 257,352 gWh. 
 
